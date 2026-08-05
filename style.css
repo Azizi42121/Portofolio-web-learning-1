@@ -18,6 +18,7 @@ body {
   margin: 0;
 }
 
+/*===== Navbar =====*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,12 +28,14 @@ body {
 
 .logo {
   font-family: "poppins";
+  font-size: 20px;
 }
 
 .role {
   font-family: "jakarta-sans";
 }
 
+/* Toggle Dark Mode */
 .switch {
   position: relative;
   display: inline-block;
@@ -81,12 +84,41 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(26px);
-  background-color: #000000; /* Warna knob hitam */
+  background-color: #000000;
   
-  /* 2. IKON BULAN PUTIH (LANGSUNG SVG DATA URI) */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-5.4-5.4c0-1.81.89-3.42 2.26-4.4C12.92 3.04 12.46 3 12 3z'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 10px;
 }
 
+/*===== About Section =====*/
+.about{
+  margin: 40px 0px 0px 50px;
+}
+
+.about h1{
+  font-family: "jakarta-sans";
+  font-size: 60px;
+}
+
+.about-text{
+  font-family: 'jakarta-sans';
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.about-text p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.about-btn button {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-family: 'jakarta-sans';
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
