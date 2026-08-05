@@ -22,7 +22,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid blue;
+  border-bottom: 3px solid var(--primary-color);
   padding: 10px;
 }
 
@@ -33,6 +33,8 @@ body {
 
 .role {
   font-family: "jakarta-sans";
+  margin-top: auto;
+  opacity: 75%;
 }
 
 /* Toggle Dark Mode */
