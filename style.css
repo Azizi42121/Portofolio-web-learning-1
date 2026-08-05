@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "poppins";
+  src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "jakarta-sans";
+  src: url("fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --primary-color: #1e7abc;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid blue;
+  padding: 10px;
+}
+
+.logo {
+  font-family: "poppins";
+}
+
+.role {
+  font-family: "jakarta-sans";
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.4s;
+
+  background-image: url("icon/sunny-svgrepo-com.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
+input:checked + .slider {
+  background-color: #3a3b3c;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+  background-color: #000000; /* Warna knob hitam */
+  
+  /* 2. IKON BULAN PUTIH (LANGSUNG SVG DATA URI) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-5.4-5.4c0-1.81.89-3.42 2.26-4.4C12.92 3.04 12.46 3 12 3z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
