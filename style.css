@@ -124,3 +124,163 @@ input:checked + .slider::before {
   color: #ffffff;
   background-color: var(--primary-color);
 }
+
+/*===== Card Profile =====*/
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  position: relative;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #53503773;
+  width: 90%;
+  margin: 100px auto;
+  max-width: 480px;
+  text-align: center;
+  font-family: 'jakarta-sans';
+  height: 90%;
+}
+
+.modal-box h2 {
+  margin-top: 12px;
+}
+
+.img-profile {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border: 3px solid #1e7abc;
+}
+
+.biography {
+  width: 225px;
+}
+
+.biography h4 {
+  font-size: 20px;
+}
+
+.biography p {
+  font-size: 13px;
+  margin-top: -20px;
+  text-align: justify;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 20px auto;
+}
+
+th {
+  font-size: 14px;
+  color: #555;
+  padding: 8px 15px 8px 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+td {
+  font-size: 12px;
+  color: #777;
+  padding: 8px 0px;
+  vertical-align: top;
+  text-align: right;
+}
+
+.container-down {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tech-section {
+  max-width: 225px;
+}
+
+.tech-section h6 {
+  font-size: 20px;
+  margin-top: 27px;
+}
+
+#html {
+  width: 50px;
+  height: auto;
+}
+
+#css {
+  width: 50px;
+  height: auto;
+}
+
+#js {
+  width: 50px;
+  height: auto;
+}
+
+#py {
+  width: 50px;
+  height: auto;
+  transform: translateY(-6px);
+}
+
+#vsc {
+  width: 50px;
+  height: auto;
+}
+
+#github {
+  width: 50px;
+  height: auto;
+}
+
+#figma {
+  width: 30px;
+  height: auto;
+}
+
+.img-tech {
+  margin-top: -45px;
+}
+
+.img-tech img {
+  width: 20px; 
+  height: auto;
+}
+
+.soft-skill {
+  margin-top: -30px;
+}
+
+.container-soft-skill {
+  display: flex;
+  width: 100%;
+  margin-top: -12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.soft-skill-text {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #1e7abc49;
+  font-weight: 600;
+  color: #2586ca;
+}
