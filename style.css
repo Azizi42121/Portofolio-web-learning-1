@@ -286,3 +286,26 @@ td {
   font-weight: 600;
   color: #2586ca;
 }
+
+
+/*===== Project Section ======*/
+.project-section {
+  margin: 40px 0 0 50px;
+  font-family: 'jakarta-sans';
+}
+
+.project-section h2 {
+  font-size: 44px;
+}
+
+.search-input input {
+  margin-left: 8px;
+  height: 25px;
+  padding-left: 32px;
+  background-image: url('icon/search-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 18px;
+  border: 1.5px solid #abaaaa;
+  border-radius: 5px;
+}
