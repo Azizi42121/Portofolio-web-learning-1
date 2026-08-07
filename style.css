@@ -298,9 +298,11 @@ td {
   font-size: 44px;
 }
 
+/* Search */
 .search-input input {
   margin-left: 8px;
   height: 25px;
+  width: 425px;
   padding-left: 32px;
   background-image: url('icon/search-svgrepo-com.svg');
   background-repeat: no-repeat;
@@ -308,4 +310,45 @@ td {
   background-size: 18px;
   border: 1.5px solid #abaaaa;
   border-radius: 5px;
+}
+
+.search-input label {
+  font-size: 18px;
+}
+
+/* Card Project */
+.container-project {
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+}
+
+.card-project {
+  border: 2px solid #777;
+  display: flex;
+}
+
+.img-project {
+  width: 100px;
+  height: auto;
+  margin: 3px;
+  border: 2px solid #abaaaa;
+}
+
+.card-text h5 {
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.card-text p {
+  font-size: 14px;
+  margin-top: -2px;
+}
+
+.card-badge span {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px;
+  background-color: #cfcfcf;
+  color: #333;
+  border-radius: 10px;
 }
