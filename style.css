@@ -290,7 +290,7 @@ td {
 
 /*===== Project Section ======*/
 .project-section {
-  margin: 40px 0 0 50px;
+  margin: 40px 50px 0 50px;
   font-family: 'jakarta-sans';
 }
 
@@ -319,12 +319,18 @@ td {
 /* Card Project */
 .container-project {
   display: grid;
-  grid-template-columns: repeat(2,2fr);
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .card-project {
-  border: 2px solid #777;
+  border: 1.5px solid #777;
   display: flex;
+  padding: 10px;
+  min-width: 0;
+  gap: 10px;
+  border-radius: 15px;
 }
 
 .img-project {
@@ -332,6 +338,12 @@ td {
   height: auto;
   margin: 3px;
   border: 2px solid #abaaaa;
+  border-radius: 10px;
+}
+
+.card-desc {
+  min-width: 0;
+  flex: 1;
 }
 
 .card-text h5 {
@@ -342,12 +354,25 @@ td {
 .card-text p {
   font-size: 14px;
   margin-top: -2px;
+  white-space: nowrap;       
+  overflow: hidden;          
+  text-overflow: ellipsis;  
+  max-width: 100%;  
+}
+
+.card-badge {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-bottom: 5px;
 }
 
 .card-badge span {
   font-size: 11px;
   font-weight: 700;
-  padding: 5px;
+  padding: 6px;
+  height: auto;
   background-color: #cfcfcf;
   color: #333;
   border-radius: 10px;
