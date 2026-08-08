@@ -412,3 +412,88 @@ td {
   color: var(--text-badge);
   border-radius: 10px;
 }
+
+/*===== Quick Note Section =====*/
+.note-section {
+  font-family: 'jakarta-sans';
+  margin: 40px 50px 0 50px;
+}
+
+.note-section h2 {
+  font-size: 35px;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.container-note {
+  padding: 0 15px 5px 15px;
+  border: 1px solid var(--bg-card-border);
+  border-radius: 12px;
+}
+
+.container-note h4 {
+  font-size: 20px;
+  color: var(--text-main);
+  margin-top: 10px;
+}
+
+.input-text {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.name-input input {
+  width: 500px;
+}
+
+.name-input button {
+  margin-left: 380px;
+  margin-top: 8px;
+  color: var(--text-main);
+  background-color: var(--bg-badge);
+  padding: 7px 12px 7px 12px;
+  width: max-content;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px;
+  border: 1.5px solid var(--input-border);
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.char-count {
+  align-self: flex-end; 
+  font-size: 12px;
+  color: var(--bg-card-border);
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.display-text h6 {
+  font-size: 20px;
+  color: var(--text-main);
+}
+
+.display-text p {
+  font-size: 12px;
+}
