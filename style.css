@@ -445,6 +445,7 @@ td {
 
 .name-input input {
   width: 500px;
+  background-color: var(--bg-main);
 }
 
 .name-input button {
@@ -472,6 +473,7 @@ textarea {
   font-size: 14px;
   padding: 12px;
   border: 1.5px solid var(--input-border);
+  background-color: var(--bg-card);
   border-radius: 8px;
   outline: none;
   box-sizing: border-box;
@@ -496,4 +498,22 @@ textarea:focus {
 
 .display-text p {
   font-size: 12px;
+}
+
+.noteList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.noteList li {
+  background-color: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-main);
 }
